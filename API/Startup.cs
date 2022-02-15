@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using API.Data;
 using API.Interfaces;
-using API.Extensions;
+using API.Extentions;
 using API.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Builder;
+//using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
@@ -36,7 +36,7 @@ namespace API
             services.AddApplicationServices(_config);
             services.AddControllers();
             services.AddCors();
-            Services.AddIdetityServices(_config);
+            services.AddIdetityServices(_config);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
