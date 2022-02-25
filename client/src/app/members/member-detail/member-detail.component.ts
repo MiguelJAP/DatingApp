@@ -11,6 +11,7 @@ import { MembersService } from 'src/app/_services/members.service';
   styleUrls: ['./member-detail.component.css']
 })
 export class MemberDetailComponent implements OnInit {
+  showValue = false;
   member: Member;
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
@@ -30,6 +31,14 @@ export class MemberDetailComponent implements OnInit {
       }
     ]
   }
+
+  // setShowValue (showValue: boolean, member: Member, memberField1: Member, memberField2: Member) {
+
+  //   if (({memberField1} && {memberField2}) == null) {
+  //     return showValue = true;
+  //   }
+
+  // }
   
   getImages(): NgxGalleryImage[] {
     const imageUrls = [];
